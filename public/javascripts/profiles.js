@@ -23,13 +23,14 @@ window.onload = function () {
                     profile_list +=
                         "<ul>" + "Name: " + res[x].name + " </ul>" +
                         "<ul>" + "Age: " + res[x].age + " </ul>" +
-                        "<ul>" + "Photo: " + res[x].photo + " </ul>" +
+                        "<ul>" + "Photo: " + "<img src='" + res[x].photo + "'" + " </ul>" +
                         "<ul>" + "Gender: " + res[x].FK_gender_id + "</ul>" +
                         "<ul>" + "Orientation: " + res[x].FK_orientation_id + "</ul>" +
                         "<ul>" + "Religion: " + res[x].religion + res[x].symbol+"</ul>" +
-                        "<ul>" + "Social Network: " + res[x].social_network + "</ul>" +
+                        "<ul>" + "Social Network: <a href='" + res[x].social_network + "'></ul>" +
                         "<ul>" + "Last Changed: " + res[x].last_changed + "</ul>"
-                }
+                }           
+
 
                 profile.innerHTML = profile_list;
 
