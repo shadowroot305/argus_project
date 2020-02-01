@@ -30,7 +30,7 @@ window.onload = function () {
                         "<ul>" + "Nationality: " + res[x].nationality + res[x].nationality_symbol + "</ul>" +
                         "<ul>" + "Service: " + res[x].service + res[x].service_symbol + "</ul>" +
                         "<ul>" + "Status: " + res[x].status + "</ul>" +
-                        "<ul>" + "Social Network: " + res[x].social_network + "</ul>" +
+                        "<ul>" + "Eye Color: " + res[x].eye_color + "</ul>" +
                         "<ul>" + "Last Changed: " + res[x].last_changed + "</ul>"
                 }           
 
