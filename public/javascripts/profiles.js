@@ -24,13 +24,15 @@ window.onload = function () {
                         "<ul>" + "Name: " + res[x].name + " </ul>" +
                         "<ul>" + "Age: " + res[x].age + " </ul>" +
                         "<ul>" + "Photo: " + "<img src='" + res[x].photo + "'" + " </ul>" +
-                        "<ul>" + "Gender: " + res[x].FK_gender_id + "</ul>" +
-                        "<ul>" + "Orientation: " + res[x].FK_orientation_id + "</ul>" +
-                        "<ul>" + "Religion: " + res[x].religion + res[x].symbol+"</ul>" +
-                        "<ul>" + "Social Network: <a href='" + res[x].social_network + "'></ul>" +
+                        "<ul>" + "Gender: " + res[x].gender + res[x].gender_symbol + "</ul>" +
+                        "<ul>" + "Orientation: " + res[x].orientation + res[x].orientation_symbol + "</ul>" +
+                        "<ul>" + "Religion: " + res[x].religion + res[x].religion_symbol+"</ul>" +
+                        "<ul>" + "Nationality: " + res[x].nationality + res[x].nationality_symbol + "</ul>" +
+                        "<ul>" + "Service: " + res[x].service + res[x].service_symbol + "</ul>" +
+                        "<ul>" + "Status: " + res[x].status + "</ul>" +
+                        "<ul>" + "Social Network: " + res[x].social_network + "</ul>" +
                         "<ul>" + "Last Changed: " + res[x].last_changed + "</ul>"
                 }           
-
 
                 profile.innerHTML = profile_list;
 

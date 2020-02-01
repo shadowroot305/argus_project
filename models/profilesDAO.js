@@ -9,7 +9,7 @@ module.exports.getProfiles = function(callback) {
             callback(err, { code: 500, status: "Error in the connection to the database" })
             return;
         }
-        conn.query("SELECT * FROM profile, religion WHERE FK_religion_id = religion_id", 
+        conn.query("SELECT * FROM profile, religion, gender, orientation, nationality, service, status WHERE FK_religion_id = religion_id AND FK_gender_id = gender_id AND FK_orientation_id = orientation_id AND FK_nationality_id = nationality_id AND FK_service_id = service_id AND FK_status_id = status_id", 
 
             function(err, result) {
                 conn.release();
